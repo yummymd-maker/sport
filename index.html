@@ -190,16 +190,13 @@
                 <!-- 视频播放器区域 -->
                 <div class="relative bg-black aspect-video flex-shrink-0">
                     <!-- 加载状态 -->
-                    <div id="videoLoader" class="absolute inset-0 flex items-center justify-center">
+                    <div id="videoLoader" class="absolute inset-0 flex items-center justify-center z-0">
                         <svg class="animate-spin h-8 w-8 text-keep-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                             <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                             <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                         </svg>
                     </div>
-                    <video id="courseVideo" class="w-full h-full object-cover z-10 relative" controls playsinline preload="metadata">
-                        <source id="videoSource" src="" type="video/mp4">
-                        您的浏览器不支持视频播放。
-                    </video>
+                    <iframe id="courseIframe" class="w-full h-full z-10 relative bg-black" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 
                 <!-- 底部操作栏 -->
@@ -246,7 +243,7 @@
                 difficulty: "K2 进阶",
                 difficultyColor: "bg-blue-500/80 text-white",
                 image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=800",
-                video: "https://www.w3schools.com/html/mov_bbb.mp4"
+                embedUrl: "//player.bilibili.com/player.html?bvid=BV1E54y1B7oZ&autoplay=1&high_quality=1&danmaku=0"
             },
             {
                 id: 2,
@@ -257,7 +254,7 @@
                 difficulty: "K3 强化",
                 difficultyColor: "bg-orange-500/80 text-white",
                 image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=800",
-                video: "https://www.w3schools.com/html/mov_bbb.mp4"
+                embedUrl: "//player.bilibili.com/player.html?bvid=BV1vW4y1c76c&autoplay=1&high_quality=1&danmaku=0"
             },
             {
                 id: 3,
@@ -268,7 +265,7 @@
                 difficulty: "K1 零基础",
                 difficultyColor: "bg-green-500/80 text-white",
                 image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&q=80&w=800",
-                video: "https://www.w3schools.com/html/mov_bbb.mp4"
+                embedUrl: "//player.bilibili.com/player.html?bvid=BV1Mf4y1t7L8&autoplay=1&high_quality=1&danmaku=0"
             },
             {
                 id: 4,
@@ -279,29 +276,29 @@
                 difficulty: "K2 进阶",
                 difficultyColor: "bg-blue-500/80 text-white",
                 image: "https://images.unsplash.com/photo-1548690312-e3b507d8c110?auto=format&fit=crop&q=80&w=800",
-                video: "https://www.w3schools.com/html/mov_bbb.mp4"
+                embedUrl: "//player.bilibili.com/player.html?bvid=BV1PU4y1479Z&autoplay=1&high_quality=1&danmaku=0"
             },
             {
                 id: 5,
                 title: "超燃脂 HIIT 挑战",
-                instructor: "Jojie",
+                instructor: "帕梅拉 Pamela Reif",
                 duration: "25分钟",
                 calories: "280千卡",
                 difficulty: "K4 挑战",
                 difficultyColor: "bg-red-500/80 text-white",
                 image: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&q=80&w=800",
-                video: "https://www.w3schools.com/html/mov_bbb.mp4"
+                embedUrl: "//player.bilibili.com/player.html?bvid=BV1ph411X7Ug&autoplay=1&high_quality=1&danmaku=0"
             },
             {
                 id: 6,
                 title: "晨间唤醒瑜伽",
-                instructor: "每日瑜伽",
+                instructor: "周六野 Zoey",
                 duration: "15分钟",
                 calories: "60千卡",
                 difficulty: "K1 零基础",
                 difficultyColor: "bg-green-500/80 text-white",
                 image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=800",
-                video: "https://www.w3schools.com/html/mov_bbb.mp4"
+                embedUrl: "//player.bilibili.com/player.html?bvid=BV1PV411v7Ej&autoplay=1&high_quality=1&danmaku=0"
             },
             {
                 id: 7,
@@ -312,7 +309,7 @@
                 difficulty: "K3 强化",
                 difficultyColor: "bg-orange-500/80 text-white",
                 image: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&q=80&w=800",
-                video: "https://www.w3schools.com/html/mov_bbb.mp4"
+                embedUrl: "//player.bilibili.com/player.html?bvid=BV1s9wFzPEYM&autoplay=1&high_quality=1&danmaku=0"
             },
             {
                 id: 8,
@@ -323,7 +320,7 @@
                 difficulty: "K1 零基础",
                 difficultyColor: "bg-green-500/80 text-white",
                 image: "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&q=80&w=800",
-                video: "https://www.w3schools.com/html/mov_bbb.mp4"
+                embedUrl: "//player.bilibili.com/player.html?bvid=BV1rb411x7W5&autoplay=1&high_quality=1&danmaku=0"
             }
         ];
 
@@ -383,8 +380,8 @@
         // 模态框逻辑
         const modal = document.getElementById('videoModal');
         const modalContent = document.getElementById('modalContent');
-        const video = document.getElementById('courseVideo');
-        const videoSource = document.getElementById('videoSource');
+        const iframe = document.getElementById('courseIframe');
+        const videoLoader = document.getElementById('videoLoader');
 
         function openModal(course) {
             // 填充数据
@@ -398,9 +395,12 @@
             // 清除旧颜色，应用新颜色（简单处理：覆盖类名）
             diffEl.className = `px-2 py-0.5 rounded text-xs font-bold ${course.difficultyColor}`;
 
-            // 设置视频并播放
-            videoSource.src = course.video;
-            video.load();
+            // 设置 iframe 视频源，显示 Loading 并在 iframe 加载完成后隐藏 Loading
+            videoLoader.style.display = 'flex';
+            iframe.onload = () => {
+                videoLoader.style.display = 'none';
+            };
+            iframe.src = course.embedUrl;
             
             // 显示模态框
             modal.classList.remove('hidden');
@@ -413,15 +413,6 @@
             
             // 锁定 body 滚动
             document.body.style.overflow = 'hidden';
-
-            // 自动播放
-            const playPromise = video.play();
-            if (playPromise !== undefined) {
-                playPromise.catch(error => {
-                    // 自动播放可能会被浏览器阻止
-                    console.log("Auto-play was prevented");
-                });
-            }
         }
 
         function closeModal() {
@@ -430,8 +421,8 @@
             modalContent.classList.remove('scale-100');
             modalContent.classList.add('scale-95');
             
-            // 停止视频播放
-            video.pause();
+            // 停止视频播放（清空 iframe src）
+            iframe.src = '';
             
             // 动画结束后隐藏 DOM
             setTimeout(() => {
@@ -445,14 +436,6 @@
             if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
                 closeModal();
             }
-        });
-        
-        // 监听视频加载状态控制 Loading 图标
-        video.addEventListener('playing', () => {
-            document.getElementById('videoLoader').style.display = 'none';
-        });
-        video.addEventListener('waiting', () => {
-            document.getElementById('videoLoader').style.display = 'flex';
         });
     </script>
 </body>
